@@ -1,0 +1,208 @@
+body {
+    font-family: "Avenir next condensed";
+}
+
+header img {
+    width: 100%;
+}
+
+header {
+    background-color: #30c6f4;
+    display: block;
+}
+
+footer {
+    background-color: #24408e;
+    display: block;
+}
+
+footer img {
+    padding-left: 20px;
+    width: auto;
+    height: 20px;
+}
+
+p {
+    color: #ffffff;
+    padding-left: 20px;
+}
+
+ul li{
+    color: #ffffff;
+    list-style: none;
+}
+
+footer nav p a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer nav p a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer nav p a:hover {
+    color: #f4cc25;
+    text-decoration: none;
+}
+
+h3 {
+    color: #f4cc25;
+    font-size: 30px;
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 110px;
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+footer aside p img {
+    width: 100%;
+    height: auto;
+    padding-top: 23px;
+    padding-left: 0px;
+}
+
+footer div p {
+    font-size: 8px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+header aside nav li {
+    display: inline;
+    padding: 25px;
+}
+
+header aside nav a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header aside nav a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header aside nav a:hover {
+    color: #f4cc25;
+    text-decoration: none;
+}
+
+main a:link {
+    color: #30c6f4;
+    text-decoration: none;
+}
+
+main a:visited {
+    color: #30c6f4;
+    text-decoration: none;
+}
+
+main a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main section p img {
+    width: 300px;
+    height: auto;
+}
+
+main section p a:link {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+main section p a:visited {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+main section p a:hover {
+    color: #f4cc25;
+    text-decoration: underline;
+}
+
+#contact {
+    padding-left: 20px;
+}
+
+.details {
+    background-color: #30c6f4;
+}
+
+#about {
+    background-image: url(Photos/About.png);
+    width: 90%;
+    height: auto;
+    font-size: 110px;
+    padding-left: 2.5%;
+    padding-right: 7.5%;
+}
+
+#programs {
+    background-image: url(Photos/Programs.png);
+    width: 90%;
+    height: auto;
+    font-size: 110px;
+    padding-left: 1%;
+    padding-right: 9%;
+}
+
+#donate {
+    background-image: url(Photos/Donate.png);
+    width: 90%;
+    height: auto;
+    font-size: 110px;
+    padding-left: 1%;
+    padding-right: 9%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.full {
+    width: 100%;
+}
+
+.half {
+    width: 50%;
+}
+
+.one-fifth {
+    width: 20%;
+}
+
+.four-fifths {
+    width: 80%;
+}
+
+.one-third {
+    width: 33%;
+}
+
+.two-thirds {
+    width: 66%;
+}
+
+.column {
+    float: left;
+}
+
+textarea {
+    width: 50%;
+    height: 200px;
+}
+
+input {
+    margin-bottom: 10px;
+}
