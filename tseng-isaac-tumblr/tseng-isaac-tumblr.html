@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        header {
+            display: block;
+            width: 250px;
+            height: 300px;
+            float: left;
+            position: fixed;
+            margin-left: 250px;
+            margin-top: 200px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            padding: 10px;
+            background-color: rgba(150, 180, 200, 0.7);
+            text-align: center;
+        }
+        
+        a:hover {
+            color: rgb(200, 230, 250);
+        }
+        
+        header p {
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #profile-image {
+            border-radius: 75px;
+            border: 2px solid #ffffff;
+        }
+        
+        h1 {
+            font-family: "avenir";
+            color: #ffffff;
+            text-align: center;
+            font-size: 35px;
+            line-height: 20px;
+        }
+        
+        h2 {
+            font-family: "avenir";
+            color: #ffffff;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        article {
+            display: block;
+            float: right;
+            width: 400px;
+            margin: 30px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            margin-right: 250px;
+            margin-left: 500px;
+            background-color: rgba(150, 180, 200, 0.7);
+        }
+        
+        #background-image {
+            background-image: url({HeaderImage});
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+        
+        .article-title {
+            font-family: "avenir";
+            color: #ffffff;
+            text-align: left;
+            padding-left: 20px;
+            font-size: 20px;
+        }
+        
+        .directory {
+            font-family: "avenir";
+            color: #ffffff;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        .caption {
+            font-family: "avenir";
+            color: #ffffff;
+            text-align: left;
+            padding-left: 10px;
+        }
+        
+        article h2,
+        a,
+        i {
+            color: white;
+            font-size: 13px;
+            text-align: left;
+        }
+        
+        p {
+            font-family: "avenir";
+            color: #ffffff;
+            text-align: left;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            font-size: 13px;
+        }
+        
+        svg {
+            fill: #ffffff;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 20px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            margin: 0px;
+        }
+        
+        ul li {
+            display: inline-block;
+            color: #aaaaaa;
+            font-family: "avenir";
+            list-style: none;
+        }
+        
+        article p img {
+            width: 362px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body id="background-image">
+    <header>
+        <p>
+            <img src="{PortraitURL-128}" id="profile-image">
+        </p>
+        <h1> [ {Title} ] </h1>
+        <h2> {Description} </h2>
+        <ul class="directory">
+            <li><a href="http://des117auto.tumblr.com/">home</a></li>
+            <li><a href="http://des117auto.tumblr.com/ask">ask</a></li>
+            <li><a href="http://des117auto.tumblr.com/archive">archive</a></li>
+        </ul>
+    </header>
+
+    {block:Posts}
+    <article>
+        {block:Text}
+        <h2 class="article-title"> [ {Title} ] </h2>
+        <p> {Body} </p>
+        {/block:Text} {block:Photo}
+        <p><img src="{PhotoURL-HighRes}"></p>
+        <p class="caption">{caption}</p>
+        {/block:Photo}
+
+        <p> {block:Date} {Month} {DayOfMonth}, {year} {/block:Date} </p>
+
+        <ul>
+            <li>{LikeButton color="white"}</li>
+            <li>{ReblogButton}</li>
+        </ul>
+
+
+    </article>
+    {/block:Posts}
+</body>
+
+</html>
